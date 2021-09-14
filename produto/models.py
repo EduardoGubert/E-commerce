@@ -63,7 +63,7 @@ class Variacao(models.Model):
     estoque = models.PositiveBigIntegerField(default=1)
 
     def __str__(self):
-        return self.nome or self.produto.nome
+        return self.nome or self.produto.name
 
     # class Meta:
     #     model = "Variação"
